@@ -92,6 +92,7 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
+  height: 72px;
 }
 
 .header-logo-link {
@@ -142,8 +143,8 @@ body {
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--link-color-accent);
-  /* border-bottom: 4px solid #404bbf; */
-  /* border-radius: 2px; */
+  border-bottom: 4px solid #404bbf;
+  border-radius: 2px;
 }
 
 .contacts {
