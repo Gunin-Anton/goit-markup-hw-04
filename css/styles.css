@@ -276,12 +276,12 @@ body {
 
 .icon-antenna::before {
   background-image: url(../images/antenna.svg);
-  background-size: 60px;
+  background-size: 64px;
 }
 
 .icon-clock::before {
   background-image: url(../images/clock.svg);
-  background-size: 61px;
+  background-size: 64px;
 }
 
 .icon-diagram::before {
@@ -398,18 +398,24 @@ body {
 }
 
 .team-icon li {
-  width: 40px;
-  height: 40px;
 }
 
 .team-icon a {
   display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #4d5ae5;
+}
+
+.team-icon a:hover,
+.team-icon a:focus {
+  background-color: #404bbf;
 }
 
 .team-icon svg {
-  width: 40px;
-  height: 40px;
-  fill: #4d5ae5;
+  fill: #f4f4fd;
 }
 
 /*------------ CUSTOMERS ------------*/
@@ -433,24 +439,23 @@ body {
 }
 
 .customers-item {
-  /* width: 168px; */
-  width: calc((1128 - 5 * 24px) / 6);
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-}
-
-.customers-item:hover,
-.customers-item:focus {
-  border: 1px solid #404bbf;
 }
 
 .customers-item a {
   display: inline-block;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.customers-item a:hover,
+.customers-item a:focus {
+  border: 1px solid #404bbf;
 }
 
 .customers-item svg {
-  width: 168px;
-  height: 88px;
   fill: #8e8f99;
 }
 
@@ -522,22 +527,25 @@ body {
 }
 
 .social-icon li {
-  width: 40px;
-  height: 40px;
 }
 
 .social-icon a {
   display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 8px;
+  outline: 1px #f4f4fd;
+}
+
+.social-icon a:hover,
+.social-icon a:focus {
+  background-color: #31d0aa;
 }
 
 .social-icon svg {
-  width: 40px;
-  height: 40px;
   fill: #f4f4fd;
-}
-
-.social-icon svg:hover,
-.social-icon svg:focus {
 }
 
 /*------------ FILTER ------------*/
@@ -581,6 +589,7 @@ body {
   color: var(--filter-btn-accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid #404bbf;
 }
 
 .filter-container-card {
@@ -596,6 +605,7 @@ body {
   width: calc((100% - 2 * 24px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .card-item:hover {
